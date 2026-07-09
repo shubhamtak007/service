@@ -18,6 +18,4 @@ async function compareHashed(content: string, hashed: string) {
     return matched;
 }
 
-const HashService = { generateHash, compareHashed }
-
-export default HashService;
+export { generateHash, compareHashed };

@@ -21,6 +21,4 @@ function verifyAccessToken(token: string) {
     return jwt.verify(token, process.env.JWT_ACCESS_TOKEN_SECRET as string);
 }
 
-const TokenService = { generateAccessToken, generateRefreshToken, verifyRefreshToken, verifyAccessToken };
-
-export default TokenService;
+export { generateAccessToken, generateRefreshToken, verifyRefreshToken, verifyAccessToken };

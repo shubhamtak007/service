@@ -27,6 +27,4 @@ async function formatValueByRegion(languageCode: string, currencyCode: string, v
     }).format(value);
 }
 
-export {
-    roundOffNumber, formatValueByRegion
-}
+export { roundOffNumber, formatValueByRegion };
