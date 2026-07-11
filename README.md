@@ -1,6 +1,6 @@
-```bash
 ### Services
 
+```bash
 Contains reusable services, including business logic, infrastructure components, and external integrations.
 ```
 
