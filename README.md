@@ -4,4 +4,4 @@ Contains reusable services, including business logic, infrastructure components,
 
 ## License
 
-Services is [MIT licensed](./LICENSE).
+Service is [MIT licensed](./LICENSE).
