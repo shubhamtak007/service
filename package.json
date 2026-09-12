@@ -1,20 +1,21 @@
 {
-  "name": "service",
-  "private": true,
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
-  },
-  "devDependencies": {
-    "prettier": "^3.7.4",
-    "turbo": "^2.10.8",
-    "typescript": "5.9.2"
-  },
-  "packageManager": "pnpm@9.0.0",
-  "engines": {
-    "node": ">=18"
-  }
+    "name": "service",
+    "private": true,
+    "scripts": {
+        "dev": "concurrently \"turbo dev\" \"sleep 2 && open http://localhost:3007\"",
+        "build": "turbo build",
+        "start": "turbo start",
+        "lint": "turbo lint"
+    },
+    "devDependencies": {
+        "concurrently": "^10.0.5",
+        "turbo": "^2.10.12",
+        "wait-on": "^9.1.0",
+        "typescript": "7.0.2",
+        "@types/node": "24.1.0"
+    },
+    "packageManager": "pnpm@11.25.0",
+    "engines": {
+        "node": "24.20.0"
+    }
 }
