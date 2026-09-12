@@ -1,26 +1,21 @@
 {
-    "name": "services",
-    "version": "1.0.0",
-    "description": "Utilities",
-    "homepage": "https://github.com/shubhamtak007/service.js#readme",
-    "bugs": {
-        "url": "https://github.com/shubhamtak007/service.js/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/shubhamtak007/service.js.git"
-    },
-    "license": "MIT",
-    "author": "",
-    "type": "module",
-    "scripts": {},
-    "dependencies": {
-        "bcrypt": "^6.0.0",
-        "jsonwebtoken": "^9.0.3"
+    "name": "service",
+    "private": true,
+    "scripts": {
+        "dev": "concurrently \"turbo dev\" \"sleep 2 && open http://localhost:3007\"",
+        "build": "turbo build",
+        "start": "turbo start",
+        "lint": "turbo lint"
     },
     "devDependencies": {
-        "@types/bcrypt": "^6.0.0",
-        "@types/jsonwebtoken": "^9.0.10",
-        "tsx": "^4.23.0"
+        "concurrently": "^10.0.5",
+        "turbo": "^2.10.12",
+        "wait-on": "^9.1.0",
+        "typescript": "7.0.2",
+        "@types/node": "24.1.0"
+    },
+    "packageManager": "pnpm@11.25.0",
+    "engines": {
+        "node": "24.20.0"
     }
 }
